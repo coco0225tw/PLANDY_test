@@ -1,0 +1,247 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+  vertical-align: top;
+}
+
+h1 {
+  color: #eee;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #222;
+}
+
+.color_land {
+  color: #AAD4B6;
+}
+
+.color_py {
+  color: #D8A194;
+}
+
+.phone {
+  width: 250px;
+  border-radius: 5%;
+  background-color: #eee;
+  transition: 0.5s;
+  position: relative;
+  left: 0px;
+  padding: 10px;
+}
+
+.top {
+  height: 40px;
+  position: relative;
+}
+
+.camera {
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+}
+
+.screen {
+  height: 300px;
+  transition: 0.5s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.screen .pages {
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 0px;
+  position: absolute;
+  transition: 0.5s;
+  left: 0px;
+}
+.screen .pages .page {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  background-color: #333;
+  white-space: normal;
+  position: relative;
+  font-size: 12px;
+  padding: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  color: #eee;
+  position: relative;
+}
+.screen .pages .page h2 {
+  color: #222;
+  position: relative;
+  margin: 0px;
+}
+.screen .pages .page p {
+  margin: 0px;
+  width: 100%;
+}
+.screen .pages .page .titlearea .title {
+  font-size: 16px;
+}
+.screen .pages .page1, .screen .pages .page2, .screen .pages .page3, .screen .pages .page4, .screen .pages .page5, .screen .pages .page6, .screen .pages .page7, .screen .pages .page8, .screen .pages .page9, .screen .pages .page10, .screen .pages .page11, .screen .pages .page12, .screen .pages .page13 {
+  background-color: #ddd;
+  color: #222;
+  position: relative;
+}
+.screen .pages .row {
+  padding: 10px;
+}
+.screen .pages .col-4, .screen .pages .col-6 {
+  padding: 0px;
+}
+.screen .pages .notion {
+  background-color: #fff;
+}
+.screen .pages img.i {
+  width: 40%;
+}
+.screen .pages .backtodiary {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.screen .pages .sug {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.screen .pages .submit {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.screen .pages .done {
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+}
+.screen .pages a {
+  color: #ac6c40;
+}
+.screen .pages .row.content {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 0px grey;
+}
+.screen .pages .buttons {
+  display: block;
+}
+
+.page11 .choices {
+  display: inline-block;
+}
+.page11 .choices #switch1, .page11 .choices #switch2, .page11 .choices #switch3 {
+  display: none;
+}
+.page11 .choices .choice {
+  display: inline-block;
+}
+.page11 .choices span {
+  border-radius: 5px;
+  transition: 0.2s;
+  background-color: rgba(172, 108, 64, 0.7);
+  color: #eee;
+  padding: 2px;
+  margin: 1px;
+}
+.page11 .choices span:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #222;
+}
+
+.page12 .imgtree {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+
+.page13 .specific1, .page13 .specific2 {
+  display: none;
+}
+
+.bottom {
+  height: 50px;
+  position: relative;
+}
+
+.button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border: solid 0.3px rgba(0, 0, 0, 0.5);
+}
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+button {
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 3px 10px;
+  transition: 0.2s;
+  background-color: transparent;
+  color: #222;
+}
+button:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.btn-non-bor {
+  border: none;
+}
+
+textarea {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  width: 100%;
+  border: solid 1px black;
+  margin-bottom: 10px;
+}
+
+#switch1:checked + span {
+  background-color: #eee;
+  border: solid 2px #ac6c40;
+  color: #ac6c40;
+}
+
+#switch2:checked + span {
+  background-color: #eee;
+  border: solid 2px #ac6c40;
+  color: #ac6c40;
+}
+
+#switch3:checked + span {
+  background-color: #eee;
+  border: solid 2px #ac6c40;
+  color: #ac6c40;
+}
